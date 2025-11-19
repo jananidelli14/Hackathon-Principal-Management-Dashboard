@@ -1,10 +1,10 @@
-# Hackathon Analytics Dashboard
+# Department Analytics Dashboard
 
 ## Project Overview
 
-This project contains a data analytics dashboard built using **Grafana** for analyzing departmental performance, student engagement, recruitment, and innovation metrics based on a **synthetic dataset**. 
+This project contains a data analytics dashboard built using **Grafana** for analyzing departmental performance, student engagement, recruitment, and innovation metrics based on a **synthetic dataset**.
 
-The dashboard provides insights to help academic leadership make data-driven decisions.
+The dashboard provides insights to help academic leadership make data-driven decisions, supporting principals and management with clear visualizations and key performance indicators.
 
 ---
 
@@ -57,9 +57,9 @@ The dashboard covers the following key visuals:
 ## Usage
 
 - Import the included JSON files into Grafana to replicate the dashboard setup.
-- Ensure the data source connects to a PostgreSQL database containing the dataset described.
+- Ensure the data source connects to a PostgreSQL database containing the described dataset.
 - Run the provided SQL queries to populate dashboards.
-- Customize visuals as needed based on organizational needs.
+- Customize visuals as needed based on organizational requirements.
 
 ---
 
@@ -68,11 +68,18 @@ The dashboard covers the following key visuals:
 1. Clone the repository.
 2. Load the dataset into your PostgreSQL database.
 3. Configure Grafana to connect to your PostgreSQL datasource.
-4. Import the dashboard JSON files from this repo via Grafana’s import feature.
-5. Adjust queries and panels as needed for your environment.
+4. Import the dashboard JSON files from this repository via Grafana’s import feature.
+5. Adjust queries and panels as necessary for your environment.
+
+---
+
+## Notes
+
+- This project uses a **synthetic dataset** for demonstration and testing purposes.
+- Metrics and insights should be interpreted accordingly.
 
 ---
 
 ## Contact / Support
 
-For questions or help with this project, please contact jananidelli14@gmail.com.
+For questions or assistance with this project, please contact [your email or GitHub username].
