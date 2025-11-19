@@ -2,84 +2,95 @@
 
 ## Project Overview
 
-This project contains a data analytics dashboard built using **Grafana** for analyzing departmental performance, student engagement, recruitment, and innovation metrics based on a **synthetic dataset**.
-
-The dashboard provides insights to help academic leadership make data-driven decisions, supporting principals and management with clear visualizations and key performance indicators.
+This project provides a comprehensive data analytics dashboard built using **Grafana**, designed to support principals and management in decision-making. The dashboard analyzes departmental performance, student engagement, recruitment, innovation, and resource utilization using a **synthetic dataset**.
 
 ---
 
 ## Dataset
 
-- The key dataset file is derived from the synthetic dataset `Augmented_500_Final_Fixed.csv`.
-- Data columns include:
+- Source: `Augmented_500_Final_Fixed.csv` (**synthetic data**)
+- Main columns:
   - `department_name`
   - `event_year`
   - `total_students`
-  - `total_offers`
-  - `recruiter_visits`
-  - `partnership_count`
+  - `total_teams`
   - `active_participants`
-  - `innovation_score_avg`
+  - `total_offers`
+  - `partnership_count`
+  - `recruiter_visits`
+  - `total_faculty`
+  - `active_mentors`
   - `total_hackathon_cost`
+  - `innovation_score_avg`
   - `departmental_performance_index_dpi`
   - `institutional_roi`
-- Data is aggregated by department and year in various dashboard panels.
+- Data is aggregated by department and year through the dashboard panels.
 
 ---
 
 ## Dashboard Visuals
 
-The dashboard covers the following key visuals:
+1. **Average Innovation Score by Department**  
+   - Bar chart of average innovation scores across departments.
 
-1. **Recruiter Visits and Partnerships by Department:**  
-   - Stacked bar chart showing recruiter engagement and partnership counts.
+2. **Industry Engagement by Department**  
+   - Stacked bar chart for recruiter visits and partnership counts per department.
 
-2. **Student Engagement by Department:**  
-   - Pie chart showing active participants share by departments.
+3. **Distribution of Active Participants by Department**  
+   - Pie/donut chart showing department-wise participation share.
 
-3. **Hackathon Investment vs Innovation Score:**  
-   - Scatter plot comparing hackathon costs to innovation output per department.
+4. **Hackathon Investment vs Innovation Score**  
+   - Scatter plot of total hackathon cost versus average innovation score by department.
 
-4. **Departmental Performance Index Heatmap:**  
-   - Heatmap displaying the performance index over time across departments.
+5. **Placement Success Rate by Department and Year**  
+   - Table panel summarizing students, offers, and placement ratios per department/year.
 
-5. **Placement Success Rate Trends:**  
-   - Line chart tracking placement success rates over years by department.
+6. **Total Faculty & Active Mentors by Department**  
+   - Bar chart showing faculty and mentor distribution.
 
-6. **Institutional ROI Leaderboard:**  
-   - Table ranking departments by average institutional ROI.
+7. **KPI Stat Panels**  
+   - Big number tiles indicating total students, total offers, average DPI, and institutional ROI.
 
-7. **Top N Department Tables:**  
-   - Leaderboard tables for metrics like active participants and offers.
+8. **Year-wise Student and Offer Trends**  
+   - Horizontal bar chart for year-on-year student and offer numbers.
+
+9. **Active Participants by Department**  
+   - Bar chart ranking departments by total active participants.
+
+10. **Top Departments: Students & Offers Comparison**  
+    - Bar chart comparing student and offer counts for top-5 departments.
+
+11. **Recruiter Visits by Department**  
+    - Table panel listing total recruiter visits per department.
 
 ---
 
 ## Usage
 
-- Import the included JSON files into Grafana to replicate the dashboard setup.
-- Ensure the data source connects to a PostgreSQL database containing the described dataset.
-- Run the provided SQL queries to populate dashboards.
-- Customize visuals as needed based on organizational requirements.
+- Import the included dashboard JSON file(s) into **Grafana**.
+- Ensure the data source is set up to use a PostgreSQL database with the provided synthetic dataset.
+- Use the dashboard visuals to interpret institutional performance, engagement, and resource allocation.
+- Customize queries or panels as needed for additional KPIs.
 
 ---
 
 ## Running Locally
 
-1. Clone the repository.
-2. Load the dataset into your PostgreSQL database.
-3. Configure Grafana to connect to your PostgreSQL datasource.
-4. Import the dashboard JSON files from this repository via Grafana’s import feature.
-5. Adjust queries and panels as necessary for your environment.
+1. Clone this repository.
+2. Load `Augmented_500_Final_Fixed.csv` into your PostgreSQL database.
+3. Set up Grafana and configure the data source to point to your PostgreSQL database.
+4. Import the dashboard JSON file(s) through Grafana’s UI.
+5. Adjust visualizations and queries for your environment or local schema.
 
 ---
 
 ## Notes
 
-- This project uses a **synthetic dataset** for demonstration and testing purposes.
-- Metrics and insights should be interpreted accordingly.
+- This project uses a **synthetic dataset** for demonstration and prototyping.  
+- Visuals are meant for data-driven strategic support and simulation; do not interpret figures as real-world institutional outcomes.
 
 ---
 
 ## Contact / Support
 
-For questions or assistance with this project, please contact [your email or GitHub username].
+For questions, feedback, or collaboration inquiries, please contact jananidelli14@gmail.com.
